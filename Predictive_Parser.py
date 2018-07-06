@@ -51,7 +51,5 @@ if __name__=="__main__":
     }
     terminals = ["id","(",")","+","*"]
     print(predictive_parsing(sentence="id.+.(.id.+.id.).$",parsingtable=parsingtable,terminals=terminals,start_state="E",verbose=True))
-    #Another Example done in class :-
+    #Another Example done in class:-
     print(predictive_parsing(sentence="c.c.c.c.d.d.$",parsingtable={"S" : {"c":"C.C","d":"C.C"},"C":{"c":"c.C","d":"d"}},terminals=["c,d"],start_state="S"))
-
-
