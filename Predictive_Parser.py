@@ -7,8 +7,8 @@ def predictive_parsing(sentence,parsingtable,terminals,start_state="S",verbose=T
     status = None
     match = []
     stack = [start_state,"$"]
+	
     Inp = sentence.split(".")
-    #print(Inp)
     if verbose==True:
         print_iter(["Matched"],["Stack"],["Input"],"Action")
     print_iter(match,stack,Inp,"Initial",verbose)
